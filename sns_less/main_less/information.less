@@ -1,0 +1,858 @@
+// =================================
+// 社区设置系列页面
+// =================================
+
+
+// 设置，个人资料页面
+.account-info {
+	padding: 10px 29px
+}
+
+.prset-item{
+
+	dl {
+		height: 40px;
+		.fz14;
+
+		&.at {
+			height: auto;
+			_height: 1%
+		}
+
+		&.add {
+			.fz12;
+			line-height: 40px
+		}
+	}
+
+	dt {
+		.fll;
+		padding: 11px 1px 0 0;
+		width: 134px;
+		height: 18px;
+		color: @color6;
+		text-align: right;
+		line-height: 18px;
+
+		em {
+			margin-right: 5px;
+			color: @red;
+			font-style: normal;
+			.fz12;
+		}
+	}
+
+	dd {
+		.fll;
+		overflow: hidden;
+		width: 294px;
+		_zoom: 1;
+
+		input.fl {
+			.fll
+		}
+
+		input.b, select{
+			margin: 12px 4px 0 0;
+			margin-top: 9px\9;
+		}
+
+		select {
+			margin-top: 11px;
+			margin-top: 8px\9;
+		}
+
+		p.note select {
+			margin-top: 0
+		}
+		
+		input.t {
+			margin-top: 6px;
+			margin-top: 5px\9;
+			padding: 4px;
+			width: 224px;
+			height: 18px;
+			.border(@colorc);
+			line-height: 18px
+		}
+
+		textarea.t {
+			margin-top: 6px;
+			padding: 4px;
+			width: 224px;
+			height: 54px;
+			.border(@colorc);
+			line-height: 18px
+		}
+
+		.college_wrap {
+			min-height: 1px;
+			width: 294px;
+			_height: 1%
+		}
+
+		.line {
+			overflow: hidden;
+			margin: 10px 29px 0;
+			height: 1px;
+			.bgc(@colordc);
+		}
+
+		.sect-content input.t {
+			padding: 1px
+		}
+
+		&.last {
+			overflow: visible;
+			padding-top: 8px;
+			padding-top: 10px\9;
+			width: 100px;
+			color: @color6;
+			.fz12;
+
+			a {
+				color: @color6;
+			}
+
+			i {
+				.show_ib;
+				overflow: hidden;
+				margin-left: 3px;
+				width: 10px;
+				height: 6px;
+				.bg("@{img-v9}/home.png?201203191622", 0, -128px);
+				line-height: 5px
+			}
+		}
+	}
+}
+
+.account-info{
+
+	.line {
+		margin: 20px 29px 0
+	}
+
+	dl.last {
+		margin-bottom: 20px
+	}
+}
+
+.save_set {
+	.fll;
+	margin-top: 16px;
+	width: 86px;
+	height: 30px;
+	.bg("@{img-test}/save_set.png");
+	.ti;
+}
+
+.sect-content {
+	.hide;
+
+	p {
+		margin-bottom: 5px
+	}
+}
+
+.collapse .sect-content {
+	.show
+}
+
+
+
+// 设置，隐私设置
+.nf li {
+	.fll;
+	width: 450px;
+	line-height: 26px;
+
+	a.del {
+		color: @color06c;
+		.fz12;
+	}
+}
+
+.nf input.simple-subject {
+	padding-left: 2px;
+	height: 19px;
+	border-top-width: 1px;
+	line-height: 19px;
+}
+
+#settings .nf li p {
+	.hide;
+	.fll;
+	margin: 5px 0 0 0;
+	padding-left: 78px;
+	width: 716px
+}
+
+#dialog-content #area {
+	margin: 0
+}
+
+#area a {
+	.fll;
+	margin-right: 4px;
+	padding: 1px 4px;
+	width: 3em;
+
+	&.current {
+		.bgc(@color787);
+		color: @colorf;
+	}
+}
+
+#university {
+	clear: both;
+	overflow-x: hidden;
+	overflow-y: auto;
+	max-height: 250px;
+	_height: 250px;
+	_width: 576px;
+
+	span.loading {
+		padding-left: 12px;
+		.bg("@{img}/loading.gif");
+	}
+
+	table {
+		width: 100%
+	}
+
+	.hd{
+
+		table a {
+			.fln;
+			margin-right: 0;
+			width: auto
+		}
+
+		td {
+			padding: 6px 6px 6px 0;
+			border-top: 1px solid @colorc;
+		}
+
+		table.alt td {
+			width: 9%
+		}		
+	}
+
+	.bd td {
+		padding: 2px 2px 2px 0px;
+		border-bottom: 1px solid @colorc;
+	}
+}
+
+#dialog-content h5 {
+	margin: 0;
+	padding: 10px 0 0 0;
+	width: 100%
+}
+
+.ui-content {
+	line-height: 18px
+}
+
+.dialog-school {
+	width: 100%;
+	line-height: 18px;
+	
+	.hd {
+		padding: 5px 10px;
+		border-bottom: 1px solid @colorc;
+		.bgc(@colorf7);
+
+		a {
+			.fll;
+			margin-right: 6px;
+			padding: 0 4px;
+			width: 3em;
+
+			&.current {
+				.bgc(@color06c);
+				color: @colorf;
+			}
+		}
+
+		table a {
+			.fln;
+			margin-right: 0;
+			width: auto
+		}
+
+		table.alt td {
+			width: 9%
+		}
+
+		td {
+			padding: 3px 3px 3px 0;
+			border-top: 1px solid @colorc;
+		}
+	}
+
+	.bd {
+		overflow: auto;
+		overflow-x: hidden;
+		padding: 0 0 10px 0;
+
+		td {
+			padding: 2px 0px 2px 0px;
+			border-bottom: 1px solid @colorc;
+		}
+	}
+
+	h3 {
+		margin-bottom: 4px;
+		.fz12;
+	}
+
+	table {
+		width: 100%
+	}
+}
+
+.relativep {
+	.pos-r;
+	left: 0;
+	margin-bottom: 5px;
+
+	label {
+		.pos-a;
+		top: 12px;
+		left: 5px;
+		overflow: hidden;
+		height: 18px;
+		color: @color9;
+		.fz12;
+		line-height: 18px;
+	}
+}
+
+.prset-item dd .relativep input.t {
+	padding-right: 34px;
+	width: 194px
+}
+
+.worktime {
+	margin-top: 4px;
+	.fz12;
+	line-height: 20px;
+
+	label {
+		line-height: 30px
+	}
+}
+
+.delworktime {
+	margin-top: 8px;
+
+	a {
+		color: @color36c;
+	}
+}
+
+.company p.note {
+	margin-top: 3px
+}
+
+.prset-item dd .showprivate select {
+	margin: 0
+}
+
+.proprivate {
+	.pos-r;
+	width: 88px;
+
+	li {
+		.fln;
+		margin: 0;
+		width: 88px;
+
+		&.one {
+			overflow: hidden;
+			height: 20px;
+			text-align: right;
+			line-height: 18px;
+			.cursor;
+
+			span {
+				color: @color36c;
+
+				&:hover {
+					color: @colorf62;
+				}
+			}
+
+			i {
+				.show_ib;
+				overflow: hidden;
+				margin-left: 3px;
+				width: 10px;
+				height: 6px;
+				.bg("@{img-v9}/home.gif?201203191622", 0, -129px);
+				line-height: 5px
+			}
+		}
+
+		&.two {
+			.pos-a;
+			top: 20px;
+			left: 0;
+			z-index: 44;
+			.fln;
+			overflow: hidden;
+			padding: 6px 0;
+			width: 116px;
+			.border(@colord);
+			.bgc(@colorf);
+			_top: 16px;
+
+			a {
+				.show;
+				padding: 6px;
+				color: @color3;
+				line-height: 16px;
+				_padding-bottom: 0;
+
+				&:hover {
+					.bgc(@colore);
+				}
+			}
+		}
+	}
+}
+
+.user_guess_con .proprivate {
+	width: 58px
+}
+
+.user_play_con .proprivate {
+	margin-right: 9px;
+	width: auto
+}
+
+.user_guess_con .proprivate li.one,.user_play_con .proprivate li.one {
+	width: auto;
+	text-align: left;
+	_width: 78px
+}
+
+
+
+// 设置，账号信息
+a.addfx {
+	.fll;
+	overflow: hidden;
+	width: 130px;
+	height: 30px;
+	.bg("@{img-test}/addfx.png");
+	.ti;
+}
+
+a.login-ats {
+	.pos-r;
+	.fll;
+	margin-right: 11px;
+	padding: 0 9px 0 39px;
+	height: 26px;
+	border: 2px solid @color8f;
+	.bg-c(@colorf, "@{img-v9}/login-ats.png", 0, -52px);
+	color: @color6;
+	line-height: 26px;
+	_height: 24px;
+	_line-height: 24px;
+	_padding-top: 2px;
+
+	&:hover {
+		border-color: @color856;
+		.bgp(0, -416px);
+		color: @color3;
+
+		i {
+			visibility: visible;
+			.bgp(0, -13px)
+		}
+	}
+
+	i {
+		.pos-a;
+		top: -5px;
+		right: -5px;
+		visibility: hidden;
+		overflow: hidden;
+		width: 13px;
+		height: 13px;
+		.bg("@{img-v9}/third-colse.png");
+	}
+}
+
+a.login-ats-tx-on {
+	border-color: @color469;
+	.bgp(0, -78px);
+
+	&:hover {
+		border-color: @color339;
+		.bgp(0, -442px);
+	}
+}
+
+a.login-ats-rr {
+	.bgp(0, -104px);
+
+	&:hover {
+		.bgp(0, -468px);
+	}
+}
+
+a.login-ats-rr-on {
+	border-color: @color015;
+	.bgp(0, -130px);
+
+	&:hover {
+		border-color: @color014;
+		.bgp(0, -494px);
+	}
+}
+
+a.login-ats-kx {
+	.bgp(0, -156px);
+
+	&:hover {
+		.bgp(0, -520px);
+	}
+}
+
+a.login-ats-kx-on {
+	border-color: @colorea3;
+	.bgp(0, -182px);
+
+	&:hover {
+		border-color: @colordc3;
+		.bgp(0, -546px);
+	}
+}
+
+a.login-ats-tb {
+	.bgp(0, -209px);
+
+	&:hover {
+		.bgp(0, -573px);
+	}
+}
+
+a.login-ats-tb-on {
+	border-color: @coloreb4;
+	.bgp(0, -235px);
+
+	&:hover {
+		border-color: @colordd3;
+		.bgp(0, -599px);
+	}
+}
+
+a.login-ats-sina {
+	.bgp;
+
+	&:hover {
+		.bgp(0, -364px);
+	}
+}
+
+a.login-ats-sina-on {
+	border-color: @colord72;
+	.bgp(0, -26px);
+
+	&:hover {
+		border-color: @colorcb1;
+		.bgp(0, -390px);
+	}
+}
+
+a.login-ats-db {
+	.bgp(0, -260px);
+
+	&:hover {
+		.bgp(0, -624px);
+	}
+}
+
+a.login-ats-db-on {
+	border-color: @color0f8;
+	.bgp(0, -650px);
+
+	&:hover {
+		border-color: @color0d7;
+		.bgp(0, -650px);
+	}
+}
+
+a.login-ats-fx {
+	.bgp(0, -312px);
+
+	&:hover {
+		.bgp(0, -676px);
+	}
+}
+
+a.login-ats-fx-on {
+	border-color: @colorfd6;
+	.bgp(0, -338px);
+
+	&:hover {
+		border-color: @coloree5;
+		.bgp(0, -702px);
+	}
+}
+
+.account-item {
+	padding: 23px 29px 0;
+	
+	input.save {
+		padding: 2px 10px
+	}
+
+	h3 {
+		height: 20px;
+		color: @color3;
+		font-weight: bold;
+		line-height: 20px;
+
+		span {
+			margin-left: 10px;
+			color: @color9;
+			font-weight: normal
+		}
+	}
+
+	p.b {
+		padding-top: 4px;
+		padding-left: 13px;
+		height: 20px;
+		line-height: 20px;
+
+		a {
+			color: @colorff6;
+		}
+	}
+
+	p.reg-succ {
+		margin-left: 13px;
+		padding: 0 6px 0 22px;
+		width: 208px;
+		height: 24px;
+		.bg-c(@colorffd, "@{img-v9}/home.gif?201203191622", -73px, -174px);
+		line-height: 24px
+	}
+
+	div.add-item {
+		padding: 13px 0 5px 13px
+	}
+
+	div.pl13 {
+		color: @color6;
+		line-height: 24px;
+
+		input {
+			.fll;
+			margin: 5px 7px 0 0;
+			margin: 1px\9 5px\9 0 0;
+			_margin-top: 0
+		}
+
+		label {
+			.fll
+		}
+
+		span.xm {
+			.fll;
+			width: 71px;
+			height: 24px;
+			color: @color6;
+			line-height: 24px
+		}
+
+		ol {
+			.fll;
+			padding-top: 2px;
+			color: @color6;
+			_padding-top: 5px
+		}
+	}
+
+	div.line {
+		margin-right: 0;
+		margin-left: 0
+	}
+
+	.account-save {
+		padding: 20px 0 0 29px
+	}
+}
+
+.person-account .pt10 {
+	padding-top: 10px
+}
+
+a.btn, a.btn span {
+	.show_ib;
+	overflow: hidden;
+	height: 29px;
+	.bg("@{img-v9}/btn_bg.png");
+	line-height: 29px;
+	.cursor;
+}
+
+a.btn {
+	padding-left: 22px;
+
+	span {
+		padding-right: 22px;
+		.bgp(right, 0;);
+		color: @colorf;
+	}
+}
+
+
+
+// 设置，兴趣爱好
+.fav-item {
+	padding-left: 37px;
+
+	dl.fav-set {
+		overflow: hidden;
+		height: 69px;
+
+		dt {
+			.fll;
+			width: 85px;
+			color: @color6;
+			text-align: right;
+			.fz14;
+			line-height: 24px
+		}
+
+		dd {
+			.fll;
+
+			textarea {
+				width: 362px;
+				height: 44px
+			}
+		}
+	}
+
+	p.b {
+		height: 56px;
+		color: @color9;
+
+		a {
+			color: @color06f;
+		}
+	}
+}
+
+
+
+// 设置，头像管理
+.img-item {
+	margin: 10px auto;
+	width: 620px
+}
+
+
+
+// 设置，安全设置
+.gyad {
+	padding: 8px 0 9px;
+	height: 16px;
+	color: @color9;
+	.fz12;
+	line-height: 16px;
+}
+
+.save-items {
+
+	.save {
+		margin: 10px 0
+	}
+
+	a.forget {
+		.fll;
+		margin-top: 13px;
+		margin-left: 10px;
+		height: 14px;
+		color: @color1c6;
+		.fz12;
+		line-height: 14px;
+
+		&:hover {
+			text-decoration: underline
+		}
+	}
+}
+
+.save-item {
+
+	dl.fix {
+		height: auto
+	}
+
+	dt {
+		padding-top: 16px
+	}
+
+	dd{
+
+		div {
+			overflow: hidden;
+			margin-top: 13px;
+			line-height: 24px;
+			_zoom: 1;
+
+			a.save-sets {
+				.fll;
+				color: @color1c6;
+				.fz12;
+			}
+
+			p {
+				.fll;
+				width: 340px;
+				color: @color6;
+
+				&.save-tp {
+					color: @color9;
+					.fz12;
+					line-height: 18px
+				}
+			}
+		}
+	}
+}
+
+.save-item ,.save-items {
+
+	dt{
+		width: 122px
+	}
+
+	dd {
+		width: 500px
+	}
+}
+
+.account-item textarea {
+	margin-bottom: 3px;
+	padding: 3px;
+	.border(@colorc);
+	.border-radius(0);
+	.bgin;
+	box-shadow: none;
+	resize: none;
+
+	&:focus {
+		box-shadow: none;
+	}
+}

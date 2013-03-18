@@ -1,0 +1,65 @@
+// =================================
+// background
+// =================================
+
+.bg (@url, @x : 0, @y : 0, @repeat : no-repeat){
+    background: url("@{url}") @x @y @repeat;
+}
+
+.bg-c (@color: transparent, @url, @x : 0, @y : 0, @repeat : no-repeat){
+    background: @color url("@{url}") @x @y @repeat;
+}
+
+.bg-sns (@url, @x: 0, @y: 0, @repeat: no-repeat){
+    background: url("@{img-sns}/@{url}") @x @y @repeat;
+}
+
+.bgp (@x: 0, @y : 0){
+    background-position: @x @y;
+}
+
+.bgp-7 (@x: 0, @y : 0){
+    *background-position: @x @y;
+}
+
+.bgi (@url){
+    background-image: url("@{url}");
+}
+
+.bgi-6 (@url){
+    _background-image: url("@{url}");
+}
+
+.bgi-6-sns (@url){
+    _background-image: url("@{img-sns}/@{url}");
+}
+
+.bgi-6-filter (@url){
+    _filter: ~'progid: DXImageTransform.Microsoft.AlphaImageLoader(enabled="true", sizingMethod="scale", src="@{url}")';
+}
+
+.bgin (){
+    background-image: none;
+}
+
+.bgin-6 (){
+    _background-image: none;
+}
+
+.bgr (@repeat : no-repeat){
+    background-repeat: @repeat;
+}
+
+.bgc (@color){
+    background-color: @color;
+}
+
+.bgs (@num: 0){
+    -webkit-background-size: @num;
+    -moz-background-size: @num;
+    background-size: @num;
+}
+
+.bgn (){
+    background: none;
+}

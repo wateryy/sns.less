@@ -1,0 +1,533 @@
+// =================================
+// 社区主页头部样式
+// =================================
+
+// wrap
+.homepage {
+	.mgauto;
+	.w890;
+	height: 1000;
+}
+
+.homewarp {
+	.pos-r;
+	.w890(-2);
+	.bgc(@colorfc);
+	.border(@colorc8);
+	.noborder-top;
+}
+
+
+
+// 大图，自定义背景
+.bannertop {
+	.pos-r;
+	overflow: hidden;
+	.w890(-2);
+	height: 260px;
+	.bg-sns("banner.png", center, center);
+	
+	// 背景图loading效果
+	.wait-loading {
+		.pos-r;
+		width: 100%;
+		height: 100%;
+
+		.wait-bg {
+			.pos-a;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			.bgc(@colorf);
+			.opacity(0.9);
+		}
+
+		.wait-text {
+			.pos-a;
+			top: 50%;
+			left: 50%;
+			margin-top: -10px;
+			margin-left: -90px;
+			padding-left: 20px;
+			width: 180px;
+			height: 20px;
+			.bgp(0, 2px);
+			font-family: @ff_lg;
+			line-height: 20px;
+		}
+	}
+}
+
+
+
+// 更换背景图按钮
+.skin-btn {
+	.pos-a;
+	top: 0;
+	right: 0;
+	.show;
+	overflow: hidden;
+	width: 18px;
+	height: 18px;
+	.bg-sns("skin-btn.png");
+
+	&:hover{
+		.bgp(0, -21px);
+	}
+}
+
+
+
+// 背景图更换操作
+#mhm-thumb-form {
+	.pos-a;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%
+}
+
+#mhm-thumb-input {
+	margin-left: -160px;
+	height: 100%;
+	.opacity(0);
+	
+	.cursor;
+}
+
+.mhm-thumb-save,.mhm-thumb-cancel {
+	.pos-a;
+	right: 10px;
+	bottom: 10px;
+	width: 120px;
+	height: 25px;
+	border: 0;
+	.bg-sns("thumb-update.gif");
+	.ti;
+	.cursor;
+}
+
+.mhm-thumb-save {
+	bottom: 40px;
+	.bgp(0, -25px);
+
+	&:hover{
+		.bgp(0, -100px);
+	}
+}
+
+.mhm-thumb-cancel {
+	bottom: 70px;
+	.bgp(0, -50px);
+
+	&:hover{
+		.bgp(0, -125px);
+	};
+}
+
+
+
+// 更换头像
+.portrait {
+	.pos-a;
+	.bgc(@colorfc);
+	top: 150px;
+	left: 18px;
+
+	img{
+		.show;
+		padding: 3px;
+	}
+
+	.chead{
+		.pos-a;
+		top: 150px;
+		left: 50%;
+		.hide;
+		margin-left: -45px;
+	}
+
+	&:hover .chead{
+		.show_ib;
+	}
+}
+
+
+
+// 鲜花鸡蛋数
+.roundlist {
+	.pos-a;
+	right: 20px;
+	bottom: 10px;
+	width: 290px;
+	height: 60px;
+
+	.roundbg {
+		.pos-a;
+		.show;
+		width: 60px;
+		height: 60px;
+		.bgp(-72px, -84px);
+		
+		color: @colorf;
+	}
+
+	.roundlist1 {
+		left: 9px
+	}
+
+	.roundlist2 {
+		left: 86px
+	}
+
+	.roundlist3 {
+		left: 163px
+	}
+
+	.roundlist4 {
+		left: 240px
+	}
+
+	.nums {
+		padding: 15px 0 8px 0;
+		text-align: center;
+		.fz12;
+	}
+
+	.flowers {
+		text-align: center
+	}
+}
+
+
+
+// 个人资料
+.personal-info {
+	padding-left: 213px;
+
+	.pop-name{
+		padding: 8px 0 8px 0px;
+		height: 18px;
+		.fz16;
+		line-height: 18px;
+
+		.mhm-btns {
+			.flr;
+			margin-right: 15px
+		}
+
+		.mhm-name-b {
+			margin-right: 5px;
+			.fz16;
+			font-family: @ff_ms;
+		}
+	}
+
+	.in-detail {
+		padding-bottom: 10px;
+
+		span.time {
+			padding: 0 9px 0px 16px
+		}
+	}
+}
+
+
+
+// 编辑个人资料、发布动态等按钮
+.btnCmn {
+	.show_ib;
+	margin-left: 5px;
+	width: 89px;
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+	.bg-sns("btncmn.png");
+	color: @color6;
+	.fz12;
+
+	&:hover{
+		.bgp(0, -22px);
+	}
+}
+
+a.btnCmn,a.btn-dp,a.c-b {
+	color: @color3;
+
+	&:hover{
+		color: @colorf62;
+	}
+}
+
+.btnCmn.atd {
+	.bgp(0, -44px);
+	color: @colorf;
+
+	&:disabled{
+		.bgp;
+	}
+
+	&:hover{
+		.bgp(0, -66px);
+		.ti;
+	}
+}
+
+
+
+// 等级星星
+.mhm-lvl {
+	.pos-r;
+	.pos-r;
+	z-index: 2\9;
+	overflow: hidden;
+	height: 22px;
+
+	&:hover .mhm-lvl-wrp{
+		.show;
+	}
+
+	img {
+		.show_ib;
+		vertical-align: middle;
+		.cursor;
+	}
+
+	.mhm-lvl-wrp {
+		.pos-a;
+		.bg-sns("grade-b.png");
+		top: -67px;
+		left: 50%;
+		.hide;
+		margin-left: -97px;
+		width: 192px;
+		height: 67px;
+	}
+
+	.mhm-lvl-prcw {
+		.pos-a;
+		top: 7px;
+		left: 11px;
+		overflow: hidden;
+		width: 170px;
+		height: 10px;
+		.border-radius;
+
+		.bgc(@colorf);
+	}
+
+	.mhm-lvl-prc {
+		height: 100%;
+		.border-radius;
+		.bgc(@colorf27);
+	}
+
+	.mhm-lvl-old,.mhm-lvl-new {
+		.pos-a;
+		top: 35px;
+		color: @colorf;
+		.fz12;
+	}
+
+	.mhm-lvl-old {
+		left: 11px
+	}
+	
+	.mhm-lvl-new {
+		right: 11px
+	}
+}
+
+
+
+// 转发到第三方
+.social {
+	height: 16px;
+	line-height: 16px;
+
+	span{
+		.fll;
+		height: 16px;
+		line-height: 16px;
+		.show;
+	}
+
+	a{
+		.show_ib;
+		padding-right: 4px;
+		width: 16px;
+		height: 18px;
+		.bg-sns("shequ.png");
+	}
+
+	.qq_zone, .qq_zone-un:hover{
+		.bgp;
+	}
+
+	.kaixin,.kaixin-un:hover {
+		.bgp(-21px, 0);
+	}
+
+	.x_weibo,.x_weibo-un:hover {
+		.bgp(-44px, 0);
+	}
+
+	.qq_weibo,.qq_weibo-un:hover {
+		.bgp(-67px, 0);
+	}
+
+	.renren,.renren-un:hover {
+		.bgp(-89px, 0);
+	}
+
+	.qq_zone-un {
+		.bgp(0, -24px);
+	}
+
+	.kaixin-un {
+		.bgp(-21px, -24px);
+	}
+
+	.x_weibo-un {
+		.bgp(-44px, -24px);
+	}
+
+	.qq_weibo-un {
+		.bgp(-67px, -24px);
+	}
+
+	.renren-un {
+		.bgp(-89px, -24px);
+	}
+}
+
+
+
+// 观众卡
+.cardWrp {
+	.pos-r;
+	overflow: hidden;
+	margin: 20px auto;
+	padding: 0 10px;
+	width: 830px;
+	.bgc(@colorf);
+
+	.arr-wrp-l, .arr-wrp-r{
+		.bgc(@colorf);
+		.pos-a;
+		top: 0;
+		bottom: 0;
+		width: 17px;
+
+		a{
+			.pos-r;
+			top: 44px;
+		}
+	}
+
+	.arr-wrp-l {
+		left: 0;
+		text-align: left
+	}
+
+	.arr-wrp-r {
+		right: 0;
+		text-align: right
+	}
+
+	.show {
+		visibility: visible;
+	}
+
+	.hide {
+		visibility: hidden;
+	}
+}
+
+.card {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 814px;
+	height: 122px;
+	.border(@colore6);
+	.bgc(@colorf4);
+
+	dl {
+		.fll;
+		padding: 15px 13px 11px 11px;
+		width: 140px;
+		height: 96px;
+
+		&.nocard {
+			.pos-r;
+
+			dd {
+				.opacity(0.3);
+			}
+		}
+	}
+
+	dt {
+		padding-bottom: 5px;
+		border-bottom: 1px solid @colore1;
+		color: @color9;
+
+		a {
+			color: @color3;
+
+			&:hover {
+				text-decoration: underline
+			}
+		}
+	}
+
+	dd {
+		margin-top: 9px;
+		width: 140px;
+		height: 70px;
+		.bgp(10px, 10px);
+		.bgr;
+		.bgs(50px);
+
+		&.unv {
+			.border(@colorec);
+			.border-radius(3px);
+			.bgc(@coloref);
+			
+			color: @color9;
+			text-align: center;
+			.fz16;
+			line-height: 69px
+		}
+	}
+	
+	// 立即领取按钮
+	a.pcard {
+		.pos-a;
+		top: 65px;
+		left: 40px;
+		width: 79px;
+		height: 25px;
+		.bg-sns("7925.png");
+		
+		color: @colorf;
+		text-align: center;
+		line-height: 25px;
+		font-family: @ff_cn;
+	}
+}
+
+.ico-arr-l,.ico-arr-r {
+	.show_ib;
+	width: 8px;
+	height: 30px;
+	.bg-sns("arrow_s.png", center, 0);
+	zoom: 1;
+	*display: inline
+}
+
+.ico-arr-l {
+	.bgp(center, -30px);
+}
+
